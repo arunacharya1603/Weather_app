@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <form id="weatherForm">
+          <div class="input-group">
+              <input type="text" id="locationInput" placeholder="Enter Location">
+              <button type="submit" id="searchButton"><img src="images/search.png" alt="Search Icon"></button>
+          </div>
+      </form>
+        <div class="contain">
+          <button id="geoLocationButton">My Location</button>
+        
+        <!-- <label for="unitSelector">Unit:</label> -->
+        <select id="unitSelector">
+            <option value="metric">Celsius (°C)</option>
+            <option value="imperial">Fahrenheit (°F)</option>
+        </select>
+        </div>
+        <img src="images/rain.png" alt="Weather Image">
+
+
+        <div id="weatherData">
+          <h2 class="city">City</h2>
+          <div class="columns">
+              <div class="left-column">
+                  <p>Temperature:</p>
+                  <p>Humidity:</p>
+              </div>
+              <div class="right-column">
+                  <p>Wind Speed:</p>
+                  <p>Weather:</p>
+              </div>
+          </div>
+      </div>
+      
+      
+      
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

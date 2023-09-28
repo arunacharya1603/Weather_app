@@ -1,0 +1,218 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #222;
+}
+
+img {
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    height: auto; /* Maintain the image's aspect ratio */
+    border-radius: 8px; /* Add rounded corners */
+}
+
+/* Center the form and buttons */
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #222;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Use Flexbox to align items in a column */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+}
+
+/* Style the heading */
+h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px; /* Add some space below */
+}
+
+/* Style the input field */
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* Take up available space */
+    margin-bottom: 20px; /* Add some space below */
+}
+
+#locationInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    height: 50px;
+    width: 90%;
+    border-radius: 30px;
+    font-size: 18px;
+    padding-left: 16px; /* Add left padding for better alignment */
+}
+
+/* Style the search button */
+#searchButton {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#searchButton img {
+    width: 24px; /* Adjust the image size as needed */
+    height: 24px;
+}
+
+/* Style the container for the "Use My Location" and unit selector */
+.contain {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 20px; /* Add some space below */
+}
+
+/* Style the "Use My Location" button */
+#geoLocationButton {
+    padding: 10px 20px; /* Increase padding for better touchability */
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Style the unit selector */
+label {
+    font-weight: bold;
+}
+#geoLocationButton{
+    width: 11rem;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style the weather data container */
+#weatherData {
+    /* text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px; */
+
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+   
+ /* Center elements horizontally */
+    padding: 10px;
+}
+
+.city {
+    
+    font-size: 24px; /* Adjust font size as needed */
+    margin-top: 0; /* Remove top margin for h2 */
+}
+.left-column img{
+    width: 16px;
+}
+
+.temperature-icon {
+    display: inline-block; /* Make the icon inline with the text */
+    margin-right: 5px; /* Add some space between the icon and text */
+    vertical-align: middle; /* Vertically align the icon with the text */
+    width: 20px; /* Set the width of the icon */
+    height: 20px; /* Set the height of the icon */
+}
+.humidity-icon {
+    display: inline-block; /* Make the icon inline with the text */
+    margin-right: 5px; /* Add some space between the icon and text */
+    vertical-align: middle; /* Vertically align the icon with the text */
+    width: 20px; /* Set the width of the icon */
+    height: 20px;
+    background-color: #8a7272; /* Set the height of the icon */
+}
+.wind-icon {
+    display: inline-block; /* Make the icon inline with the text */
+    margin-right: 5px; /* Add some space between the icon and text */
+    vertical-align: middle; /* Vertically align the icon with the text */
+    width: 20px; /* Set the width of the icon */
+    height: 20px;
+    background-color: #8a7272; /* Set the height of the icon */
+}
+.description-icon {
+    display: inline-block; /* Make the icon inline with the text */
+    margin-right: 5px; /* Add some space between the icon and text */
+    vertical-align: middle; /* Vertically align the icon with the text */
+    width: 20px; /* Set the width of the icon */
+    height: 20px;
+    background-color: #8a7272; /* Set the height of the icon */
+}
+
+
+
+.columns {
+    gap: 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: 700; /* Add top margin for spacing */
+}
+
+/* Style for the left column (temperature and humidity) */
+.left-column {
+    
+    text-align: left; /* Align content to the left */
+}
+
+.left-column p {
+    margin: 0px 0px 0px -17px;
+    width: 182px;
+ /* Remove margin for p elements */
+}
+
+/* Style for the right column (wind speed and weather) */
+.right-column {
+    text-align: left; /* Align content to the left */
+}
+
+.right-column p {
+    margin: 0px -15px 0 5px;
+    width: 187px;
+}
+
+
+
+/* Style error messages */
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+/* Larger screens (desktops and tablets) */
+@media (min-width: 768px) {
+    .container {
+        max-width: 600px;
+    }
+}
