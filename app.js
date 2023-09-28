@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-    // window.onload = function() {
-    //     fetchWeatherData('Delhi','metric');
-    // };
+    window.onload = function() {
+        fetchWeatherData('Delhi','metric');
+    };
 
 
 
